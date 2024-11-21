@@ -3,10 +3,10 @@ include 'conectar.php';
 
 try {
     // Valores que se actualizarán
-    $id = 3;
-    $nombre = "Charlie";
-    $apellido = "Marika";
-    $email = "charlie.marika@example.com";
+    $id = $_POST['id'];
+    $nombre = $_POST['nombre'];
+    $apellido = $_POST['apellido'];
+    $email = $_POST['email'];
 
     // Consulta SQL para actualizar el registro
     $sql = "UPDATE usuarios SET nombre=?, apellido=?, email=? WHERE id=?";

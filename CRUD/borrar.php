@@ -3,7 +3,7 @@ include 'conectar.php';
 
 try {
     // ID del registro que se va a eliminar
-    $id = 14;
+    $id = $_POST['id'];
 
     // Consulta SQL para eliminar el registro
     $sql = "DELETE FROM usuarios WHERE id=?";

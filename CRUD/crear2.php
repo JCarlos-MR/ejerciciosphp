@@ -8,9 +8,9 @@ include 'conectar.php';
 
 try {
     // Valores que se insertarán en la base de datos
-    $nombre = "Carlos";
-    $apellido = "Mejia";
-    $email = "carlos.mejia@example.com";
+    $nombre = $_POST['nombre'];
+    $apellido = $_POST['apellido'];
+    $email = $_POST['email'];
 
     // Consulta SQL para insertar los valores
     $sql = "INSERT INTO usuarios (nombre, apellido, email) VALUES ('$nombre', '$apellido', '$email')";
