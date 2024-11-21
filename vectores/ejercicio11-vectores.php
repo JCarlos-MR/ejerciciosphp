@@ -16,3 +16,5 @@ asort($productos_precios);
 print_r($productos_precios);
 
 ?>
+  </body>
+  </html>
